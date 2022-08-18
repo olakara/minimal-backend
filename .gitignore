@@ -1,7 +1,7 @@
 #Junk Files
 *.DS_Store
 [Tt]humbs.db
-
+out/
 #Visual Studio Files
 **/[Oo]bj/
 **/[Bb]in/
