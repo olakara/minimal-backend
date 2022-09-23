@@ -28,18 +28,18 @@ services:
     networks:
       - app
 
-  # webapi:
-  #   container_name: minimal-webapi
-  #   image: minimal-backend
-  #   build:
-  #     context: .
-  #     dockerfile: ./Dockerfile
-  #   ports:
-  #     - 5000:5000
-  #   depends_on:
-  #     - kibana
-  #   networks:
-  #     - app
+  webapi:
+    container_name: minimal-webapi
+    image: minimal-backend
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 5000:5000
+    depends_on:
+      - kibana
+    networks:
+      - app
 
 networks:
   app:
