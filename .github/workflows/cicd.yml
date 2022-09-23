@@ -19,8 +19,8 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           images: |
-            name/app
-            ghcr.io/olakara/minimal-backend
+            olakara/minimal-backend
+            hub.docker.com/repository/docker/olakara/minimal-backend
           tags: |
             type=schedule
             type=ref,event=branch
