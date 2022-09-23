@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\abdel.olakara\\Desktop\\minimal-backend\\tests\\MinimalApi.Tests\\MinimalApi.Tests.csproj": {}
+    "C:\\Users\\olaka\\Desktop\\minimal-backend\\tests\\MinimalApi.Tests\\MinimalApi.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\abdel.olakara\\Desktop\\minimal-backend\\tests\\MinimalApi.Tests\\MinimalApi.Tests.csproj": {
+    "C:\\Users\\olaka\\Desktop\\minimal-backend\\src\\MinimalApi\\MinimalApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\abdel.olakara\\Desktop\\minimal-backend\\tests\\MinimalApi.Tests\\MinimalApi.Tests.csproj",
-        "projectName": "MinimalApi.Tests",
-        "projectPath": "C:\\Users\\abdel.olakara\\Desktop\\minimal-backend\\tests\\MinimalApi.Tests\\MinimalApi.Tests.csproj",
-        "packagesPath": "C:\\Users\\abdel.olakara\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\abdel.olakara\\Desktop\\minimal-backend\\tests\\MinimalApi.Tests\\obj\\",
+        "projectUniqueName": "C:\\Users\\olaka\\Desktop\\minimal-backend\\src\\MinimalApi\\MinimalApi.csproj",
+        "projectName": "MinimalApi",
+        "projectPath": "C:\\Users\\olaka\\Desktop\\minimal-backend\\src\\MinimalApi\\MinimalApi.csproj",
+        "packagesPath": "C:\\Users\\olaka\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\olaka\\Desktop\\minimal-backend\\src\\MinimalApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\abdel.olakara\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\olaka\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,6 +40,98 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Serilog.Aspnetcore": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Serilog.Enrichers.Environment": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Serilog.Exceptions": {
+              "target": "Package",
+              "version": "[8.4.0, )"
+            },
+            "Serilog.Sinks.Debug": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "Serilog.Sinks.Elasticsearch": {
+              "target": "Package",
+              "version": "[8.4.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\olaka\\Desktop\\minimal-backend\\tests\\MinimalApi.Tests\\MinimalApi.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\olaka\\Desktop\\minimal-backend\\tests\\MinimalApi.Tests\\MinimalApi.Tests.csproj",
+        "projectName": "MinimalApi.Tests",
+        "projectPath": "C:\\Users\\olaka\\Desktop\\minimal-backend\\tests\\MinimalApi.Tests\\MinimalApi.Tests.csproj",
+        "packagesPath": "C:\\Users\\olaka\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\olaka\\Desktop\\minimal-backend\\tests\\MinimalApi.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\olaka\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\olaka\\Desktop\\minimal-backend\\src\\MinimalApi\\MinimalApi.csproj": {
+                "projectPath": "C:\\Users\\olaka\\Desktop\\minimal-backend\\src\\MinimalApi\\MinimalApi.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Testing": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.1.0, )"
@@ -67,7 +159,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -76,7 +169,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
