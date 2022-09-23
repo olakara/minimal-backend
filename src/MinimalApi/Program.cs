@@ -26,14 +26,27 @@ app.UseHttpsRedirection();
 app.MapGet("/", (ILoggerFactory loggerFactory) =>{
     var logger = loggerFactory.CreateLogger("Root");
     logger.LogInformation("Application Root called!");
-    return "Hello World!";
+    return Results.Ok("Hello World!");
 });
 
 app.MapGet("/version",(ILoggerFactory loggerFactory) =>{
     var logger = loggerFactory.CreateLogger("Version");
     logger.LogInformation("Application Version API!");
-    return "Version: 0.2.0!";
+    return Results.Ok("Version: 0.3.0!");
 });
+
+app.MapGet("/delay",(ILoggerFactory loggerFactory) =>{
+    var logger = loggerFactory.CreateLogger("Delayed");
+    logger.LogInformation("Delayed API!");
+    var randomGenerator = new Random();
+    var delay  = randomGenerator.Next(1000, 5000);
+    logger.LogWarning($"Delaying for {delay} seconds");    
+    Thread.Sleep(delay);
+    return Results.Ok(new {
+        Message = "Delay of " + delay
+    });
+});
+
 
 app.Run();
 
