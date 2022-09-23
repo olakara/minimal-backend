@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc.Testing;
+using FluentAssertions;
 namespace MinimalApi.Tests;
 public class ApiTests
 {

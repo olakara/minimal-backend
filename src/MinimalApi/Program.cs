@@ -26,7 +26,7 @@ app.UseHttpsRedirection();
 app.MapGet("/", (ILoggerFactory loggerFactory) =>{
     var logger = loggerFactory.CreateLogger("Root");
     logger.LogInformation("Application Root called!");
-    return Results.Ok("Hello World!");
+    return "Hello World!";
 });
 
 app.MapGet("/version",(ILoggerFactory loggerFactory) =>{
